@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import Boxicons CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Welcome to AS</title>
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="Academy System" />
+    <!-- The title shown when shared on social platforms -->
+    <meta property="og:description" content="Academic system login page for teachers to register students" />
+    <meta property="og:url" content="https://academy-system.page.gd" />
+    <!-- Type of content -->
+    <meta property="og:type" content="website" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="badge.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <!-- <a href="#" class="logo"><i class="fas fa-graduation-cap"></i> AS</a> -->
+            <a href="#home" class="logo">
+                <img src="badge.png" alt="academy system">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#plans">Plans</a></li>
+            </ul>
+            <a href="login.html" class="cta-btn loginButton">Login</a>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Empowering Education Management</h1>
+        <p>Streamline student registration, teacher oversight, and academic analytics with our secure, intuitive
+            platform designed for modern educators.</p>
+        <div class="hero-buttons">
+            <a href="#features" class="cta-btn">Discover Features</a>
+            <a href="#plans" class="cta-btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">
+                Explore a complete set of tools designed to simplify academic management, boost productivity, and
+                enhance collaboration across your institution.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-plus feature-icon"></i>
+                    <h3>Student Registration</h3>
+                    <p>Effortlessly onboard new students with automated workflows and real-time enrollment tracking.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                    <h3>Teacher Management</h3>
+                    <p>Enable educators to oversee classes, monitor progress, and foster student growth easily.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Analytics & Reports</h3>
+                    <p>Access data on attendance, performance, and trends to drive better academic outcomes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Secure & Compliant</h3>
+                    <p>Enterprise-grade security protocols ensure data privacy and system reliability.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-user-cog feature-icon"></i>
+                    <h3>User Roles & Permissions</h3>
+                    <p>Manage admin, teacher, and student access with role-based permissions for better control and
+                        flexibility.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-bell feature-icon"></i>
+                    <h3>Smart Notifications</h3>
+                    <p>Keep users updated with instant alerts for grades, announcements, and system updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span>Academy System</span> ?</h2>
+            <p class="section-subtitle">
+                Empowering education through technology, innovation, and simplicity.
+            </p>
+
+            <div class="choose-grid">
+                <div class="choose-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Modern Interface</h3>
+                    <p>Clean, fast, and responsive design built for seamless user experience.</p>
+                </div>
+                <div class="choose-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Collaborative Learning</h3>
+                    <p>Bringing students and teachers together in a dynamic academic ecosystem.</p>
+                </div>
+                <div class="choose-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Data Security</h3>
+                    <p>Ensuring your information stays safe with advanced encryption protocols.</p>
+                </div>
+                <div class="choose-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated support team ready to help whenever you need assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How to Use <span>Academy System</span> ?</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create an Account</h3>
+                    <p>Sign up with your email and basic information to start using the system.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Verify Your Email</h3>
+                    <p>Check your inbox and confirm your email to activate your account securely.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Log In</h3>
+                    <p>Access your dashboard and manage your academic activities easily.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Manage Students</h3>
+                    <p>Add, edit, or delete student information with just a few clicks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Transforming Academic Administration</h2>
+                    <p>Our platform simplifies complex educational processes while maintaining security and reliability.
+                    </p>
+                    <p>We empower institutions to focus on student success through smart automation and real-time
+                        analytics.</p>
+                    <a href="#contact" class="cta-btn">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/dashboard-illustration-svg-download-png-3726301.png"
+                        alt="Academic Dashboard Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PLANS -->
+    <section class="plans" id="plans">
+        <h2 class="section-title">Choose the Best <span>Plan</span> for Your Academy</h2>
+        <div class="subscription">
+            <!-- Free Plan -->
+            <div class="plan-card">
+                <h2>Free</h2>
+                <h3>$0</h3>
+                <p>Basic Access</p>
+                <span></span>
+                <ul>
+                    <li>✅ Manage students with basic access</li>
+                    <li>✅ Basic dashboard access</li>
+                    <li>✅ View available courses</li>
+                    <li>✅ Limited email support</li>
+                </ul>
+                <button class="login">Choose Plan</button>
+            </div>
+
+            <!-- Basic Plan -->
+            <div class="plan-card">
+                <h2>Basic</h2>
+                <h3>$80</h3>
+                <p>Starter Access</p>
+                <span></span>
+                <ul>
+                    <li>✅ Unlimited student capacity</li>
+                    <li>✅ Full dashboard access</li>
+                    <li>✅ Student analytics and reports</li>
+                    <li>✅ 24/7 support</li>
+                </ul>
+                <button class="soon">Coming Soon</button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="plan-card">
+                <h2>Standard</h2>
+                <h3>$150</h3>
+                <p>Complete Service</p>
+                <span></span>
+                <ul>
+                    <li>✅ All features of Basic</li>
+                    <li>✅ Advanced analytics and reports</li>
+                    <li>✅ Smart notifications</li>
+                    <li>✅ Email and phone support</li>
+                </ul>
+                <button class="soon button-primary">Coming Soon</button>
+
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan-card">
+                <h2>Premium</h2>
+                <h3>$350</h3>
+                <p>All Features</p>
+                <span></span>
+                <ul>
+                    <li>✅ All features of Standard</li>
+                    <li>✅ Unlimited students</li>
+                    <li>✅ Priority 24/7 support</li>
+                    <li>✅ Advanced reporting & export</li>
+                </ul>
+                <button class="soon">Coming Soon</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Us</span></h2>
+            <p class="section-subtitle">We’d love to hear from you! Fill out the form below.</p>
+
+            <form action="send_message.php" method="POST" class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Your Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" name="send" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Academy System</h3>
+                    <p>Revolutionizing academic management with secure, scalable, and innovative solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#plans">Plans</a>
+                    <a href="login.html" class="loginButton">Login Portal</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> academysystem11@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +201102645949</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 45 Street, Miami, Alexandria, Egypt</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 <a href="index2.html" target="_blank" class="footer-link"><b>AcSys</b></a> | All
+                    Rights Reserved</p>
+                <p>Website by : <a href="#" target="_blank" class="footer-link"><b>Ahmed Mohamed</b></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

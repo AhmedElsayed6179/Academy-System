@@ -23,13 +23,6 @@
 
 ---
 
-## 📸 Project Preview
-| Desktop Interface | Mobile Interface |
-| :--- | :--- |
-| ![Desktop View](https://via.placeholder.com/400x250?text=Desktop+Preview) | ![Mobile View](https://via.placeholder.com/150x250?text=Mobile+Preview) |
-
----
-
 ## ⚙️ Installation & Setup
 To run this project locally, follow these steps:
 
